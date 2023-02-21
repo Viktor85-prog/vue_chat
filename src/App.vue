@@ -126,7 +126,6 @@ body {
     overflow: hidden;
 	
 }
-
 .chat__bitrixName {
 	border-bottom: 1px solid transparent;
     color: #2067b0;
@@ -160,8 +159,9 @@ body {
     word-wrap: break-word;
 	font-size: 14.5px;
 	background-color: #f3fed6;
-	/* background-position: top right; */
-    /* background-repeat: no-repeat; */
+	background-position: top right;
+    background-repeat: no-repeat;
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='317' height='358' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='a' maskUnits='userSpaceOnUse' x='0' y='0' width='317' height='358'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 0h317v358H0V0z' fill='%23F3FED6'/%3E%3C/mask%3E%3Cg mask='url(%23a)' fill-rule='evenodd' clip-rule='evenodd'%3E%3Cpath d='M-550 .17h867v358h-867V.17z' fill='%23F3FED6'/%3E%3Cpath opacity='.1' d='M329 182.5c0 83.119-67.381 150.5-150.5 150.5S28 265.619 28 182.5 95.381 32 178.5 32 329 99.381 329 182.5zm-32.765 0c0 65.023-52.712 117.735-117.735 117.735S60.765 247.523 60.765 182.5 113.477 64.765 178.5 64.765 296.235 117.477 296.235 182.5zm-99.477-17.117h-31.976v.007h-13.719v13.072h13.719v71.709h-13.719v13.718h54.874v-13.718h-9.179v-84.788zm6.279-42.224c0 12.689-10.286 22.975-22.974 22.975s-22.974-10.286-22.974-22.975c0-12.688 10.286-22.974 22.974-22.974s22.974 10.286 22.974 22.974z' fill='%239DCF00'/%3E%3C/g%3E%3C/svg%3E");
     border-radius: 23px;
     margin: 12px 0 0;
 }
@@ -191,9 +191,9 @@ body {
 	width: 56px;
     height: 56px;
 	float: right;
-	background-color: red;
 	border-radius: 50%;
 	margin: 23px 32px;
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='57' height='57' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M29.613 56.473a27.997 27.997 0 1126.882-27.977c.294 15.146-11.737 27.667-26.882 27.977z' fill='%23fff'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M28.503 48.5c11.045 0 20-8.954 20-20s-8.955-20-20-20c-11.046 0-20 8.954-20 20s8.954 20 20 20zm.23-25.353a3.382 3.382 0 100-6.764 3.382 3.382 0 000 6.764zm2.457 2.833h-4.707v.001h-2.02v1.924h2.02v10.556h-2.02v2.02h8.078v-2.02h-1.35v-12.48z' fill='%239DCF00'/%3E%3C/svg%3E")
 }
 
 .informers {
