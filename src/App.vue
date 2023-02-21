@@ -43,6 +43,10 @@
 							</div>
 						</div>
 					</div>
+					<div class="comments__addComment">
+						<div class="comments__avatar"></div>
+						<input class="comments__input" placeholder="Добавить комментарий"/>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -271,5 +275,22 @@ body {
 
 .comments__commentTo {
 	color: #2067b0;
+}
+
+.comments__addComment {
+	padding-top: 3px;
+	display: flex;
+}
+
+.comments__input {
+	height: 39px;
+	width: 90%;
+	border-radius: 40px;
+	border-color: #a8adb4;;
+    cursor: pointer;
+	color: #a8adb4;
+	padding: 0 15px;
+    vertical-align: top;
+    font-size: 13px;
 }
 </style>
