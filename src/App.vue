@@ -23,15 +23,18 @@
 					<span>2</span>
 				</div>
 				<div class="comments">
-					<div class="comments__comment">
+					<div class="comments__comment" v-for="(comment) in comments" :key="comment.id">
 						<div class="comments__avatar"></div>
-						<div class="">
+						<div class="comments__inner">
 							<div class="comments__content">
 								<span class="comments__authorName">
-									tifani alan
+									{{comment.authorName}}
 								</span>
-								<span class="comments__time">12:36</span>
-								<div class="comments__text">sasasa</div>
+								<span class="comments__time">{{comment.time}}</span>
+								<div class="comments__text">
+									<span class="comments__commentTo">{{comment.commentTo? comment.commentTo + ',' : ''}}</span>
+									{{comment.text}}
+								</div>
 							</div>
 							<div class="comments__informers">
 								<span>Нравится</span>
@@ -49,12 +52,30 @@
 </template>
 
 <script>
-import Message from './components/Message.vue'
-
 export default {
   name: 'App',
-  components: {
-    Message
+  data() {
+	return {
+		comments: [{
+			id: 1,
+			authorName: 'tifani alan',
+			time: '12:36',
+			text: 'sasasas',
+			commentTo: ''
+		},{
+			id:2,
+			authorName: 'tifani alan',
+			time: '12:36',
+			text: 'asasa',
+			commentTo: ''
+		},{
+			id:3,
+			authorName: 'tifani alan',
+			time: '12:36',
+			text: 'sasasa',
+			commentTo: 'tifani alan'
+		}]
+	}
   }
 }
 </script>
@@ -70,14 +91,14 @@ body {
 
 .container {
 	min-width: 1080px;
-	height: 500px;
+	min-height: 500px;
 	padding: 20px;
 	background-color: #2958B4;
 }
 
 .chat {
 	width: 800px;
-	height: 350px;
+	min-height: 350px;
 	padding: 10px;
 	background-color: #fff;
 	border-radius: 5px;
@@ -203,6 +224,7 @@ body {
 .comments__avatar {
 	width: 37px;
     height: 37px;
+	margin-right: 10px;
     border-radius: 50%;
 	background-color: red;
 }
@@ -216,7 +238,9 @@ body {
     box-sizing: border-box;
     overflow: hidden;
 }
-
+.comments__inner {
+	margin-bottom: 10px;
+}
 .comments__authorName {
 	margin-bottom: 1px;
     line-height: 16px;
@@ -243,5 +267,9 @@ body {
 	font-size: 12px;
     line-height: 12px;
 	margin: 8px 10px;
+}
+
+.comments__commentTo {
+	color: #2067b0;
 }
 </style>
